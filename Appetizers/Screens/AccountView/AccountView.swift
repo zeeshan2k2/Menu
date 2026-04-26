@@ -43,7 +43,14 @@ struct AccountView: View {
                             focusedTextField = nil
                         }
                         .submitLabel(.continue)
-                    DatePicker("Birthday", selection: $viewModel.user.birthDate, displayedComponents: .date)
+                    
+                    DatePicker(
+                        "Birthday",
+                        selection: $viewModel.user.birthDate,
+                        in: Date().oneHundredTenYearsAgo...Date().eighteenYearsAgo,
+                        displayedComponents: .date
+                    )
+                    
                     Button {
                         viewModel.saveChanges()
                     } label: {

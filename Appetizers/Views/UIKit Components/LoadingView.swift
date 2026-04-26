@@ -27,7 +27,12 @@ struct LoadingView: View {
             Color(.systemBackground)
                 .ignoresSafeArea()
             
-            ActivityIndicator()
+//            ActivityIndicator()
+            
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
+                // increase the size of the spinner
+                .scaleEffect(1.5)
         }
     }
     
