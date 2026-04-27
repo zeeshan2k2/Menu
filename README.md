@@ -40,7 +40,6 @@
 
 - Built as a UI-focused project to explore screen structure and navigation  
 - Emphasis on clean layout and predictable data flow  
-- Can be extended with backend integration and real ordering logic  
 
 ---
 
